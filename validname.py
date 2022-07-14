@@ -34,7 +34,7 @@ class Solution:
         for i in range(len(input)):
             if i != input.rfind(input[i]):
                 b = False
-        return (input.isalnum()) and (len(input) >= 0 or len(input) <= 100) and b
+        return (len(input) >= 0 or len(input) <= 100) and b
 
 
 
