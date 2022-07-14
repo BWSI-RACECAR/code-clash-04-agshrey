@@ -28,13 +28,10 @@ class Solution:
         # type input: string
         # return: bool
         
-        a = Counter(input)
+
         # TODO: Write code below to return a bool with the solution to the prompt
-        b = True
-        for i in range(len(input)):
-            if i != input.rfind(input[i]):
-                b = False
-        return (len(input) >= 0 or len(input) <= 100) and b
+
+        return (len(input) >= 0 or len(input) <= 100) and len(set(input)) == len(input)
 
 
 
