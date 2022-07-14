@@ -30,7 +30,8 @@ class Solution:
         
 
         # TODO: Write code below to return a bool with the solution to the prompt
-        return input.isalnum() and (len(input) >= 0 or len(input) <= 100) and len(set(input)) == len(input)
+
+        return (len(input) >= 0 or len(input) <= 100) and len(set(input)) == len(input)
 
 
 
