@@ -28,9 +28,9 @@ class Solution:
         # type input: string
         # return: bool
         
-
+        a = Counter(input)
         # TODO: Write code below to return a bool with the solution to the prompt
-        return input.isalnum() and (len(input) >= 0 or len(input) <= 100) and len(set(input)) == len(input)
+        return (input.isalnum()) and (len(input) >= 0 or len(input) <= 100) and (len(a) == len(input))
 
 
 
